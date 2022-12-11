@@ -1,10 +1,17 @@
 /* --------- Global Styles ------------ */
-body {
-    color: #343434;
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
-img {
-    width: 300px;
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
 }
 
 a {
@@ -15,12 +22,63 @@ a:hover {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h1, h2 {
+    font-family: 'Zen Dots', cursive;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.content-wrap {
+    width: 900px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+h3 {
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0px;
+}
+.divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+img {
+    width: 300px;
+}
 /* --------- Profile ------------ */
 header {
     background-color: #2f3061;
     color: #f7fff7;
 }
-
+.about-me {
+    display: flex;
+    flex-direction: row;
+}
+.crop-portrait {
+    flex: 0 0 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.crop-portrait img {
+    margin: -100px 0px 0px -50px;
+}
 /* --------- Projects ------------ */
 .projects {
     background-color: #f7fff7;
@@ -36,45 +94,54 @@ header {
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 
 .projects .btn:hover {
-    background:  rgba(47, 48, 97, 80);
+    background:  rgba(47, 48, 97, 80%);
 }
+
+.project-item {
+    overflow: hidden;
+}
+
+.project-item img{
+    float: left;
+    margin-right: 20px;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
 /* --------- Work Experience ------------ */
 .work-experience {
     background-color: #A1C6D7;
 }
-
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
 /* --------- Education ------------ */
-
+.education .edu-description {
+    margin: 20px 0;
+}
 /* --------- Contact info ------------ */
 footer {
     background-color: #343434;
     color: #f7fff7;
-}
-/**
-footer a {
-    color: red;
+    text-align: center;
 }
 
-footer a:link {
-    color: green;
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
-
-footer a:visited {
-    color: magenta;
+.contact-list a {
+    /** By adding padding to the links, get extra space to click **/
+    padding: 15px;
+    display: inline-block;
 }
-
-footer a:focus {
-    outline: 1px solid black;
-}
-
-footer a:hover {
-    background: gray;
-}
-
-footer a:active {
-    color: white;
-}
-**/

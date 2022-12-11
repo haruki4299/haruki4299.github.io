@@ -5,96 +5,127 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Haruki Yoshida</title>
         <meta name="description" content="Haruki Yoshida's personal website.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&family=Zen+Dots&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <main>
-            <!----------------- About/Profile ------------------->
+            <!-- ***************************** About/Profile ***************************** -->
             <header id="top">
-                <h1 class="title">Haruki Yoshida</h1>
-                <h2 class="title">Software Engineer</h2>
-                <img src="images/IMG_8452.jpg" alt="personal photo">
-                <h2>About Me</h2>
-                <p> Hi! My name is Haruki. I am from Tokyo, Japan and I recently graduated from Carleton college with a
-                    Computer Science degree. My strengths are my ability to learn, aquired through the liberal arts 
-                    education in college, and my hard working nature. I love problem-solving which may relate to my love
-                    in the game of chess and programming. I've also developed skills to be a great leader/team player 
-                    through my premed work which I found to be a strength in other classes. Currently I am working on 
-                    developing my skills as a web developer and java programming.
-                </p>
+                <div class="content-wrap">
+                    <h1 class="title">Haruki Yoshida</h1>
+                    <h2 class="title">Software Engineer</h2>
+                    <div class="about-me">
+                        <p> Hi! My name is Haruki. I am from Tokyo, Japan and I recently graduated from Carleton college with a
+                            Computer Science degree. My strengths are my ability to learn, aquired through the liberal arts 
+                            education in college, and my hard working nature. I love problem-solving which may relate to my love
+                            in the game of chess and programming. I've also developed skills to be a great leader/team player 
+                            through my premed work which I found to be a strength in other classes. Currently I am working on 
+                            developing my skills as a web developer and java programming.
+                        </p>
+                        <div class="crop-portrait">
+                            <img src="images/IMG_8452.jpg" alt="personal photo">
+                        </div>
+                    </div>
+                </div>
             </header>
 
-            <!----------------- Projects/Porfolio ------------------->
+            <!-- ***************************** Projects/Porfolio ***************************** -->
             <section class="projects">
-                <h2>Featured Projects</h2>
-                <p>
-                    View some of my projects below. More of my projects and work can be found at 
-                    <a class="btn" href="https://github.com/haruki4299">my Github repository</a>
-                </p>
-
-                <section>
-                    <h3>Leetcode</h3>
-                    <p>I work on leetcode to practice my coding skills and just to have fun. Below is a link</p>
-                    <a class="btn" href="#" target="_blank">View Project</a>
-                </section>
-
+                <div class="content-wrap divider">
+                    <h2>Featured Projects</h2>
+                    <p>
+                        View some of my projects below.
+                    </p>
+                    <section class="project-item">
+                        <img src="images/coding-image.jpg" alt="">
+                        <h3>Leetcode</h3>
+                        <p>I work on leetcode to practice my coding skills and just to have fun. Below is a link</p>
+                        <a class="btn" href="#" target="_blank">View Project</a>
+                    </section>
+                    <p>More of my projects and work can be found below
+                        <a class="btn" href="https://github.com/haruki4299">my Github repository</a>
+                    </p>
+                </div>
+                
             </section>
             
-            <!----------------- Work Expereince ------------------->
+            <!-- ***************************** Work Experience ***************************** -->
             <section class="work-experience">
-                <h2>Work Experience</h2>
-                <p>See my full work history at <a href="https://www.linkedin.com/in/haruki-yoshida-0413281a3/">my LinkedIn page</a></p>
-                <section>
-                    <h3>Identity Management and Enterprise Applications Assistant - Carleton College</h3>
-                    <p>July 2022 - Present</p>
-                    <ul>
-                        <li>Configured and managed a new password management system for the college</li>
-                        <li>Deployed a new UI to manage the data in the college idp servers</li>
-                        <li>Migrated student data to from one system to another using MS SQL Server</li>
-                        <li>Data integration tasks using SQL and SnapLogic</li>
-                        <li>Other Related Skills: Docker, Ansible, GitHub, Linux, Apache Tomcat</li>
-                    </ul>
-                </section>
+                <div class="content-wrap item-details divider">
+                    <h2>Work Experience</h2>
+                    <p>See my full work history at <a href="https://www.linkedin.com/in/haruki-yoshida-0413281a3/">my LinkedIn page</a></p>
+                    <section class="job-item">
+                        <div class="job-details">
+                            <h3>Identity Management and Enterprise Applications Assistant</h3>
+                            <p>Carleton College</p>
+                            <p>July 2022 - Present</p>
+                        </div>
+                        <div class="job-summary">
+                            <ul>
+                                <li>Configured and managed a new password management system for the college</li>
+                                <li>Deployed a new UI to manage the data in the college idp servers</li>
+                                <li>Migrated student data to from one system to another using MS SQL Server</li>
+                                <li>Data integration tasks using SQL and SnapLogic</li>
+                                <li>Other Related Skills: Docker, Ansible, GitHub, Linux, Apache Tomcat</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="job-item">
+                        <div class="job-details">
+                            <h3>CS Course Staff</h3>
+                            <p>Carleton College - Student Worker</p>
+                            <p>September 2019 - November 2020</p>
+                        </div>
+                        <div class="job-summary">
+                            <p>
+                                <ul>
+                                    <li>Graded assignments and provided feedback to students for assigned CS class.</li>
+                                    <li>Hosted lab sessions and assisted students with their learning and homework assignments.</li>
+                                    <li>Main courses assigned: Data Structures with Java and Introduction to CS with Python.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </section>
+                </div>
 
             </section>
 
-            <!----------------- Education ------------------->
+            <!-- ***************************** Education ***************************** -->
             <section class="education">
-                <h2>Education</h2>
+                <div class="content-wrap item-details">
+                    <h2>Education</h2>
                 
-                <section>
-                    <h3>Carleton College - Northfield, MN</h3>
-                    <p>Bachelor of Arts, <i>Magna Cum Laude</i> 2018-2022</p>
-                    <p><i>Phi Betta Kappa</i></p>
-                    <p>Major in Computer Science</p>
-                    <p>
-                        I explored a wide range of subjects outside of Computer Science at Carleton.
-                        Math was a subject I explored and I completed calculus and linear algebra courses.
-                        In the latter half of my college years, I explored a career in medicine. I took
-                        high level courses in the sciences, such as organic chemistry, biochemistry, and human physiology. 
-                        In addition, I aquired, important communication skills through my pre-med experience which proved to
-                        be important in settings such as CS group projects.
-                    </p>
-                    <p>
-                        I also have student work experience as a tutor in both Japanese and Computer Science. As a Japanese 
-                        tutor, I helped out students of all levels with their homework assignments or understanding grammer or 
-                        the culture. As a computer science tutor, I held lab sessions where I would help students mainly with 
-                        their python or java assignments and I also graded assignments from classes and provided appropriate 
-                        feedback to each student.
-                    </p>
-                </section>
+                    <section>
+                        <h3>Carleton College - Northfield, MN</h3>
+                        <p>Bachelor of Arts in Computer Science, 2018-2022</p>
+                        <p>Honors: <i>Magna Cum Laude</i>, <i>Phi Betta Kappa</i></p>
+                        <p class="edu-description">
+                            I explored a wide range of subjects outside of Computer Science at Carleton.
+                            Math was a subject I explored and I completed calculus and linear algebra courses.
+                            In the latter half of my college years, I explored a career in medicine. I took
+                            high level courses in the sciences, such as organic chemistry, biochemistry, and human physiology. 
+                            In addition, I aquired, important communication skills through my pre-med experience which proved to
+                            be important in settings such as CS group projects.
+                        </p>
+                    </section>
+                </div>
             </section>
 
-            <!----------------- Contacts ------------------->
+            <!-- ***************************** Contacts ***************************** -->
             <footer>
-                <h2>Contact Info</h2>
-                <ul>
-                    <li><a href="haruki4299@gmail.com">haruki4299@gmail.com</a></li>
-                    <li><a href="https://www.linkedin.com/in/haruki-yoshida-0413281a3/">LinkedIn</a></li>
-                    <li><a href="https://github.com/haruki4299">My Github Repository</a></li>
-                </ul>
-
-                <a href="#top">Back to top of the page</a>
+                <div class="content-wrap">
+                    <h2>Contact Info</h2>
+                    <ul class="contact-list">
+                        <li><a href="haruki4299@gmail.com">haruki4299@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/haruki-yoshida-0413281a3/">LinkedIn</a></li>
+                        <li><a href="https://github.com/haruki4299">My Github Repository</a></li>
+                    </ul>
+    
+                    <a href="#top">Back to top of the page</a>
+                </div>
             </footer>
         </main>
     </body>
