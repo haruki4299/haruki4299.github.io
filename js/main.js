@@ -1,1 +1,1 @@
-/* Main styles sheet for personal webstie */
+/* Main styles sheet for personal website */
