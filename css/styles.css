@@ -64,6 +64,9 @@ header {
 .projects {
     background-color: #f7fff7;
 }
+.project-item {
+    padding: 25px 0;
+}
 .project-item h3 {
     margin-top: 0;
 }
