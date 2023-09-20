@@ -94,8 +94,11 @@ header {
     background-color: #A1C6D7;
 }
 /* --------- Education ------------ */
+.education .courses {
+    margin: 10px 0;
+}
 .education .edu-description {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 /* --------- Contact info ------------ */
 footer {
