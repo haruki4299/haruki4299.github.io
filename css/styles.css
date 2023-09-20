@@ -90,10 +90,11 @@ header {
 }
 
 /* --------- Work Experience ------------ */
-.work-experience {
+
+/* --------- Education ------------ */
+.education {
     background-color: #A1C6D7;
 }
-/* --------- Education ------------ */
 .education .courses {
     margin: 10px 0;
 }
