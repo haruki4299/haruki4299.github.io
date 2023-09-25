@@ -60,6 +60,13 @@ header {
     background-color: #2f3061;
     color: #f7fff7;
 }
+.word-container {
+    margin: auto;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    text-align: center;
+}
 /* --------- Projects ------------ */
 .projects {
     background-color: #f7fff7;
