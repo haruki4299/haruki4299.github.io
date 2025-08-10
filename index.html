@@ -1,195 +1,42 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Haruki Yoshida</title>
-        <meta name="description" content="Haruki Yoshida's personal website.">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&family=Zen+Dots&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script type="module" src="js/main.js"></script>
-    </head>
-    <body>
-        <main>
-            <!-- ***************************** About/Profile ***************************** -->
-            <header id="top">
-                <div class="content-wrap">
-                    <h1 class="title">Haruki Yoshida</h1>
-                    <!--<h2 class="title">Software Engineer</h2>-->
-                    <div class="about-me">
-                        <p> 
-                            Hello my name is Haruki. Welcome to my personal website. After graduating college as a CS and 
-                            premed student, I made the decision to pursue a career in tech. I am currently enrolled in the 
-                            MPCS program at the University of Chicago to pursue further knowledge and level up as a software engineer.
-                        </p>
-                        <div class="crop-portrait">
-                            <img src="images/IMG_8859.jpg" alt="personal photo">
-                        </div>
-                    </div>
-                    <!--
-                        <div class="word-container">
-                        <span class="fixed-words">I am ...</span>
-                        <span class="changing-word"></span>
-                        </div>
-                    -->
-                </div>
-            </header>
+<html lang="en">
 
-            <!-- ***************************** Projects/Porfolio ***************************** -->
-            <section class="projects">
-                <div class="content-wrap divider">
-                    <h2>Featured Projects</h2>
-                    <p>
-                        View some of my projects below. Other projects can be found at my GitHub repository.
-                    </p>
-                    <section class="project-item">
-                        <div class="project-image">
-                            <img src="images/sorting.png" alt="">
-                        </div>
-                        <div>
-                            <h3>Sorting Visualizer</h3>
-                            <p>
-                                The main goal of this project was to write some code in Javascript while reviewing some sorting algorithms.
-                                Clicking on the buttons will show the sorting algorithm in work.
-                            </p>
-                            <div class="button-wrapper">
-                                <a class="btn" href="https://haruki4299.github.io/sorting-visualizer">View Project Page</a>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="project-item">
-                        <div class="project-image">
-                            <img src="images/galaxy_s.jpg" alt="">
-                        </div>
-                        <div>
-                            <h3>Nbody Simulation</h3>
-                            <p>
-                                This was my final project for the Parallel Programming Class. We implemented a code that would simulate the nbody 
-                                problem using Golang. The nbody simulation is done implementing the Barns-Hut Algorithm and the program execution 
-                                can be parallelized for quicker execution. The results of the simulation can be plotted using python.
-                            </p>
-                            <div class="button-wrapper">
-                                <a class="btn" href="https://github.com/haruki4299/Nbody-Simulation">View Project Repository</a>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="project-item">
-                        <div class="project-image">
-                            <img src="images/azul.png" alt="">
-                        </div>
-                        <div>
-                            <h3>Azul Board Game</h3>
-                            <p>
-                                Play the board game "Azul" on a graphics interface. You can play with up to four people.
-                                The program is written in Python and uses the graphics library tkinter to create an interactive GUI.
-                            </p>
-                            <div class="button-wrapper">
-                                <a class="btn" href="https://github.com/haruki4299/azul-board-game">View Project Repository</a>
-                            </div>
-                        </div>
-                    </section>
-                    <p>More of my projects and work can be found below</p>
-                    <div class="button-wrapper">
-                        <a class="btn" href="https://github.com/haruki4299">my Github repository</a>
-                    </div>
-                </div>
-                
-            </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me - Haruki</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-            <!-- ***************************** Education ***************************** -->
-            <section class="education">
-                <div class="content-wrap item-details">
-                    <h2>Education</h2>
-                    <section>
-                        <h3>University of Chicago - Chicago, IL</h3>
-                        <p>Master's of Science in Computer Science, 2023-Present</p>
-                        <p class="courses">
-                            <b>Full List of Courses:</b> Intermediate Algorithms, Advanced Programming (C), Parallel Programming (Golang),
-                            High Performance Computing (C/C++), C/C++ for Advanced Programmers, Cloud Computing
-                        </p>
-                        <p class="edu-description">
-                           I am currently pursuing a Master's degree in CS at the University of Chicago. My goal is to take the 1.5 years at
-                           this program and take classes that I did not have time to take during my undergraduate studies and also skill up
-                           as a tech professional.
-                        </p>
-                    </section>
-                    <section>
-                        <h3>Carleton College - Northfield, MN</h3>
-                        <p>Bachelor of Arts in Computer Science, 2018-2022</p>
-                        <p>Honors: <i>Magna Cum Laude</i>, <i>Phi Betta Kappa</i></p>
-                        <p class="courses">
-                            <b>Full List of Courses:</b> Introduction to CS, Data Structures, Algorithms, Computer Organization & Architecture,
-                            Human Computer Interaction, Introduction to AI, Computability and Complexity, Software Design, Linear Algebra, Calculus,
-                            Biochemistry, Organic Chemistry, Human Physiology.  
-                        </p>
-                        <p class="edu-description">
-                           At Carleton, I was able to take advantage of the liberal arts education and study a 
-                           wide variety of subjects outside of my major including Math, Physics, Chemistry, and Biology. 
-                           I completed the course work for the premed track. I did not pursue medicine as a career but 
-                           I was able to develop skills to become a good team player and expand my horizon of knowledge.
-                           I also was able to participate in a research project for healthcare which was a valuable expereince.
-                        </p>
-                    </section>
-                </div>
-            </section>
+<body>
+  <header>
+    <h1>Haruki</h1>
+    <p>Software Engineer & Tech Enthusiast</p>
+  </header>
 
-             <!-- ***************************** Work Experience ***************************** -->
-             <section class="work-experience">
-                <div class="content-wrap item-details divider">
-                    <h2>Work Experience</h2>
-                    <p>See my full work history at <a href="https://www.linkedin.com/in/haruki-yoshida-0413281a3/">my LinkedIn page</a></p>
-                    <section class="job-item">
-                        <div class="job-details">
-                            <h3>Identity Management and Enterprise Applications Assistant</h3>
-                            <p>Carleton College</p>
-                            <p>Jul 2022 - July 2023</p>
-                        </div>
-                        <div class="job-summary">
-                            <ul>
-                                <li>Configured and managed a new password management system for the college</li>
-                                <li>Deployed a new UI to manage the data in the college idp servers</li>
-                                <li>Migrated student data to from one system to another using MS SQL Server</li>
-                                <li>Data integration tasks using SQL and SnapLogic</li>
-                                <li>Other Related Skills: Docker, Ansible, GitHub, Linux, Apache Tomcat</li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="job-item">
-                        <div class="job-details">
-                            <h3>CS Course Staff</h3>
-                            <p>Carleton College - Student Worker</p>
-                            <p>Sept 2019 - Nov 2020</p>
-                        </div>
-                        <div class="job-summary">
-                            <p>
-                                <ul>
-                                    <li>Graded assignments and provided feedback to students for assigned CS class.</li>
-                                    <li>Hosted lab sessions and assisted students with their learning and homework assignments.</li>
-                                    <li>Main courses assigned: Data Structures with Java and Introduction to CS with Python.</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </section>
-                </div>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm just figuring out what type script is about.
+    </p>
+  </section>
 
-            </section>
+  <section>
+    <h2>Contact</h2>
+    <p>
+      Linkedin:
+      <a href="https://www.linkedin.com/in/haruki-y-0413281a3/" target="_blank"
+        rel="noopener">www.linkedin.com/in/haruki-y-0413281a3/</a>
+    </p>
+    <p>
+      GitHub:
+      <a href="https://github.com/haruki4299" target="_blank" rel="noopener">github.com/haruki4299</a>
+    </p>
+  </section>
 
-            <!-- ***************************** Contacts ***************************** -->
-            <footer>
-                <div class="content-wrap">
-                    <h2>Contact Info</h2>
-                    <ul class="contact-list">
-                        <li><a href="haruki4299@gmail.com">haruki4299@gmail.com</a></li>
-                        <li><a href="https://www.linkedin.com/in/haruki-yoshida-0413281a3/">LinkedIn</a></li>
-                        <li><a href="https://github.com/haruki4299">My Github Repository</a></li>
-                    </ul>
-    
-                    <a href="#top">Back to top of the page</a>
-                </div>
-            </footer>
-        </main>
-    </body>
+  <footer>
+    <p>© 2025 Haruki. All rights reserved.</p>
+  </footer>
+</body>
+
 </html>
